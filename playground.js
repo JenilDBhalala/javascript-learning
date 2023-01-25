@@ -6,3 +6,7 @@
 // }
 
 // console.log(myFunction(2, 4));
+
+function hello(){
+    
+}
