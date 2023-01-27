@@ -40,7 +40,6 @@
 // console.log(zeroval)
 
 
-
 // //object of object destructuring
 // const seriesobj = {
 //     gameseries : {

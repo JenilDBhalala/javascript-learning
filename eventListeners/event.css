@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.grandparent{
+    background-color: rgb(164, 221, 216);
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent{
+    background-color: bisque;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child{
+    background-color: darkgoldenrod;
+    height: 200px;
+    width: 200px;
+}

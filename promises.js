@@ -100,3 +100,43 @@
 // function validateCart(cart) {
 //     return true;
 // }
+
+
+
+
+
+// //producer code
+// function fun() {
+//     const promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve("hello i am promise");
+//         }, 4000);
+//     })
+//     return promise;
+// }
+
+// function anotherfun(x) {
+//     const promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             reject(x + " hello i am another rejected promise");
+//         }, 6000);
+//     })
+//     return promise;
+// }
+
+
+// //consumer code
+// fun()
+// .then(function (x) {
+//     console.log(x);
+//     return x;
+// })
+// .then(function(y){
+//     return anotherfun(y);
+// })
+// .catch(function(y){
+//     console.log(y)
+// })
+// .then(function(){
+//     console.log("Hello i will always run")
+// })
