@@ -11,6 +11,35 @@
 
 
 
+// //obejct inside object or array inside object is reference when using spread operator
+// const obj = {
+//     name : 'jenil',
+//     age : 21,
+//     marks : [16, 28, 28, 34, 47],
+//     sub : {
+//         maths : 100,
+//         science : 96,
+//         computer : 100
+//     }
+// }
+
+// //marks and sub are reference 
+// const newObj = {...obj}
+// newObj.sub.physics = 90;
+// console.log(obj)
+// console.log(newObj);
+
+
+// //now marks is not reference because we created new array inside newObj
+// const newObj = {...obj}
+// newObj.marks = [...obj.marks]
+// newObj.marks.push(100)
+// console.log(newObj);
+// console.log(obj);
+
+
+
+
 //rest operator
 
 // //destructuring an array
