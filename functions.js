@@ -5,6 +5,7 @@
 // }
 
 
+
 // //function expression - hoisting difference
 // b();
 // var b = function (){
@@ -18,6 +19,7 @@
 // }
 
 
+
 // //named function expression
 // var b = function hello(){
 //     console.log(hello);
@@ -26,9 +28,7 @@
 // b();
 // hello();
 
-
 //first class functions(first class citizens) : ability to pass function as value and return function as value are known as first class functions
-
 
 
 
@@ -63,7 +63,6 @@
 
 
 
-
 //function borrowing using call method
 
 // let _name = {
@@ -76,13 +75,13 @@
 
 // _name.printFullName();
 
-
 // let name2 = {
 //     firstName : "Hello",
 //     lastName : "World",
 // }
 
 // _name.printFullName.call(name2)
+
 
 
 
@@ -113,7 +112,6 @@
 
 
 
-
 //normal function vs arrow function difference
 
 // const users = {
@@ -127,6 +125,8 @@
 // users.f();
 
 
+
+
 // const users2 = {
 //     x : 30,
 //     abc:{
@@ -138,3 +138,12 @@
 // }
 
 // users2.abc.f()
+
+
+
+// //same argument works in normal function
+// function sum(x, y, x, y) {
+//   return x + y + x + y;
+// }
+
+// console.log(sum(2, 7, 9, 8));  //34

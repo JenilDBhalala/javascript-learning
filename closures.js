@@ -12,6 +12,7 @@
 // z();
 
 
+
 // function z(){
 //     var b = 10;
 //     function x(){
@@ -30,6 +31,7 @@
 // z();
 
 
+
 // function x(){
 //     //var is global scope that's why
 //     for(let i=1; i<=5; i++){
@@ -43,6 +45,7 @@
 // x();
 
 
+
 // function x(){
 //     //let is block scope that's why
 //     for(let i=1; i<=5; i++){
@@ -54,6 +57,7 @@
 // }
 
 // x();
+
 
 
 // function x() {
@@ -71,6 +75,7 @@
 // }
 
 // x();
+
 
 
 // //we have write sub function in block that's why it is undefined first

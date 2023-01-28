@@ -36,6 +36,7 @@
 
 
 
+
 // //In case of constructor function this creates new empty object {} and points to that object
 // function User(firstName, lastName){
 //     this.firstName =  firstName;
@@ -47,6 +48,7 @@
 
 
 
+
 // //In forEach second argument is this keyword.
 // const user = {
 //     firstName: "Jenil",
@@ -55,9 +57,27 @@
 //     subs: ['physics', 'chemistry', 'maths'],
 //     displaySubjects(){
 //         this.subs.forEach(function(sub) {
-//             console.log(sub,this.firstName); 
+//             console.log(sub,this.firstName);
 //         }, this)  //this points to user object
 //     }
 // }
 
 // user.displaySubjects();
+
+
+
+
+// //arrow function don't have their own this so, it has it's parent this
+// const apple = {
+//     price: 10,
+
+//     banana: {
+//         price: 40,
+//         getPrice: function () {
+//             const discount = () => console.log(this.price);  //40
+//             discount();
+//         },
+//     },
+// };
+
+// apple.banana.getPrice();
