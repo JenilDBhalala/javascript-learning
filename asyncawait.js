@@ -69,6 +69,8 @@
 
 
 
+//not-blocking main thread
+
 // async function fun() {
 //     console.log("waiting for response");
 
@@ -84,3 +86,6 @@
 // }
 
 // fun();
+// fun();
+// console.log("hello")
+
