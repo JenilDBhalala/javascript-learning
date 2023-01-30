@@ -141,9 +141,21 @@
 
 
 
+
 // //same argument works in normal function
 // function sum(x, y, x, y) {
 //   return x + y + x + y;
 // }
 
 // console.log(sum(2, 7, 9, 8));  //34
+
+
+
+
+
+// //it's give error because always put semicolon before IIFE function
+// console.log("hello")
+
+// (function (){
+//     console.log("hello");
+// })();

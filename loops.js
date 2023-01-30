@@ -10,9 +10,12 @@
 // });
 
 
-//forEach in set - value and key will be same because set have no keys
-const currenciesUnique = new Set(['USD', 'EUR', 'GBP','EUR']);
+// //forEach in set - value and key will be same because set have no keys
+// const currenciesUnique = new Set(['USD', 'EUR', 'GBP','EUR']);
 
-currenciesUnique.forEach(function(value, key, set) {
-    console.log(`${key} : ${value}`);
-});
+// currenciesUnique.forEach(function(value, key, set) {
+//     console.log(`${key} : ${value}`);
+// });
+
+
+
