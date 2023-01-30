@@ -19,6 +19,7 @@
 
 
 
+
 // // <!-- beforebegin -->
 // // <p>
 // //   <!-- afterbegin -->
@@ -42,5 +43,26 @@
 
 
 
+// //matches, contains and closest functions
+// let parent = document.getElementById('parent');
+// let child1 = document.getElementById('child1');
+// let hello1 = document.getElementById('hello1');
+// let hello2 = document.getElementById('hello2');
+
+// //matches function  : ele.matches(selector)
+// console.log(child1.matches('.child1-class'))
+// console.log(parent.matches('.child1-class'))
 
 
+// //contains function : ele.contains(ele)
+// console.log(parent.contains(child1));
+// console.log(parent.contains(hello1));
+// console.log(parent.contains(hello2));
+// console.log(child2.contains(hello1));
+
+
+// //closest function : ele.closest(selector)
+// console.log(hello1.closest('.hello1-class'))
+// console.log(hello1.closest('.parent-class'))
+// console.log(hello1.closest('.child1-class'))
+// console.log(hello1.closest('.child2-class'))  //null
