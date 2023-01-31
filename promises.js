@@ -140,3 +140,39 @@
 // .then(function(){
 //     console.log("Hello i will always run")
 // })
+
+
+
+
+
+
+
+// https://promiviz.vercel.app/  : visualization
+
+//when promises are dependent on each other then Promise.all(array) is useful because it reject all promises
+//when promises are not dependent on each other then Promise.allSettled(array) is useful because it fullfills all other promises
+
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(reject, 1000, "rejected");
+}); //will be resolved after 300ms
+
+
+const promise3 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 2000, "resolved3");
+}); // will be resolved after 100ms
+
+const promise4 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 4000, "resolved4");
+}); // will be resolved after 100ms
+
+const promise5 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 2000, "resolved5");
+}); // will be resolved after 100ms
+
+Promise.allSettled([promise1, promise3, promise4, promise5])
+.then((values) => {
+    console.log(values);
+})
+.catch((err) => {
+    console.log(err);
+});
