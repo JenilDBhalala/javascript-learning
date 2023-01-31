@@ -256,3 +256,22 @@ jenil.calcAge();
 console.log(jenil.age);
 
 */
+
+
+
+// const Person = function (firstName, birthYear) {
+//   // Instance properties
+//   this.firstName = firstName;
+//   this.birthYear = birthYear;
+// };
+
+
+// Person.hey = function(){
+//   console.log("hey brother...");
+// }
+
+// console.dir(Person)
+
+// const jenil = new Person("Jenil Bhalala", 2001)
+
+
