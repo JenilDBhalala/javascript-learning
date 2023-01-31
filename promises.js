@@ -153,19 +153,19 @@
 
 // const promise1 = new Promise((resolve, reject) => {
 //     setTimeout(resolve, 1000, "resolved");
-// }); //will be resolved after 300ms
+// }); 
 
 // const promise3 = new Promise((resolve, reject) => {
 //     setTimeout(resolve, 2000, "resolved3");
-// }); // will be resolved after 100ms
+// }); 
 
 // const promise4 = new Promise((resolve, reject) => {
 //     setTimeout(resolve, 4000, "resolved4");
-// }); // will be resolved after 100ms
+// }); 
 
 // const promise5 = new Promise((resolve, reject) => {
 //     setTimeout(resolve, 2000, "resolved5");
-// }); // will be resolved after 100ms
+// }); 
 
 // Promise.all([promise1, promise3, promise4, promise5])
 // .then((values) => {
@@ -183,19 +183,19 @@
 async function fun(){
     const promise1 = new Promise((resolve, reject) => {
         setTimeout(resolve, 1000, "resolved");
-    }); //will be resolved after 300ms
+    }); 
 
     const promise3 = new Promise((resolve, reject) => {
         setTimeout(resolve, 2000, "resolved3");
-    }); // will be resolved after 100ms
+    }); 
 
     const promise4 = new Promise((resolve, reject) => {
         setTimeout(resolve, 4000, "resolved4");
-    }); // will be resolved after 100ms
+    }); 
 
     const promise5 = new Promise((resolve, reject) => {
         setTimeout(resolve, 100, "resolved5");
-    }); // will be resolved after 100ms
+    }); 
 
     
     try{
