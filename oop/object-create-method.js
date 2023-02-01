@@ -26,7 +26,8 @@ jenil.calcAge()
 
 
 
-/*
+
+
 
 //////////////////////////////////////
 // Inheritance Between "Classes": Object.create
@@ -44,6 +45,8 @@ const PersonProto = {
 const steven = Object.create(PersonProto);
 const StudentProto = Object.create(PersonProto);
 
+console.log(StudentProto)
+
 StudentProto.init = function (firstName, birthYear, course) {
   PersonProto.init.call(this, firstName, birthYear);
   this.course = course;
@@ -59,4 +62,3 @@ jay.introduce();
 jay.calcAge();
 
 
-*/
