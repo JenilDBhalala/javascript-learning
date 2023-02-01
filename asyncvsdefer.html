@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://javascript.info/article/script-async-defer/long.js"></script>
+</head>
+
+<body>
+    <p>...content before scripts...</p>
+    <p>...content after scripts...</p>
+</body>
+
+</html>
+
+
+
+<!-- 
+    normal :   HTML Parsing => JS script founded(block HTML Parsing) => JS downloading => JS execution => resume HTML Parsing
+    async (do when order of scripts don't matter) :   HTML Parsing => JS script founded => JS downloading(HTML Parsing will be continue in background)  => JS execution(block HTML parsing) => resume HTML Parsing
+    defer (do when order of scripts matter) :   HTML Parsing => JS script founded => JS downloading(HTML Parsing will be continue in background)  => JS execution(after HTML parsing done completely)
+
+    Scripts with defer never block the page.
+    Scripts with defer always execute when the DOM is ready
+
+    Async scripts are great when we integrate an independent third-party script into the page: counters, 
+    ads and so on, as they don’t depend on our scripts, and our scripts shouldn’t wait for them: 
+    Google Analytics is usually added like this -
+    <script async src="https://google-analytics.com/analytics.js"></script> 
+-->
+

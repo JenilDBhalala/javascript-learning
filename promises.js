@@ -178,33 +178,54 @@
 
 
 
-//using async-await
+// //using async-await
 
-async function fun(){
-    const promise1 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 1000, "resolved");
-    }); 
+// async function fun(){
+//     const promise1 = new Promise((resolve, reject) => {
+//         setTimeout(resolve, 1000, "resolved");
+//     }); 
 
-    const promise3 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 2000, "resolved3");
-    }); 
+//     const promise3 = new Promise((resolve, reject) => {
+//         setTimeout(resolve, 2000, "resolved3");
+//     }); 
 
-    const promise4 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 4000, "resolved4");
-    }); 
+//     const promise4 = new Promise((resolve, reject) => {
+//         setTimeout(resolve, 4000, "resolved4");
+//     }); 
 
-    const promise5 = new Promise((resolve, reject) => {
-        setTimeout(resolve, 100, "resolved5");
-    }); 
+//     const promise5 = new Promise((resolve, reject) => {
+//         setTimeout(resolve, 100, "resolved5");
+//     }); 
 
     
-    try{
-        let response = await Promise.all([promise1, promise3, promise4, promise5]);
-        console.log(response);
-    }
-    catch(err){
-        console.log(err)
-    }
-}
+//     try{
+//         let response = await Promise.all([promise1, promise3, promise4, promise5]);
+//         console.log(response);
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
 
-fun();
+// fun();
+
+
+
+
+
+// //event-loop (promises go into microtask queue and settimeout go into callback queue)
+// console.log('Test Start');
+// setTimeout(()=>{
+//     console.log('0 sec timer')
+// }, 0);
+
+// Promise.resolve('Resolved Promise 1').then(res => 
+//     console.log(res, "hello")
+// );
+
+// Promise.resolve('Resolved Promise 2').then(res => {
+//     for(let i=0; i<1000000000; i++){}
+//     console.log(res);
+// })
+
+// console.log('Test End');

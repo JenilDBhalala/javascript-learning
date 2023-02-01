@@ -1,5 +1,4 @@
 //debouncing
-
 let counter1 = 0;
 const getData1 = () => {
     console.log("Fetching Data...", counter1++);
@@ -50,7 +49,7 @@ const betterFunction = doSomeMagic(getData, 3000)
 
 /*
 
-//throttling
+//throttling - not working properly
 
 let counter = 0;
 const getData = () => {
