@@ -164,3 +164,38 @@ console.log("after newObj",newObj);
 */
 
 
+
+
+/*
+
+//another example using lodash library
+
+const obj = {
+    firstName : "Jenil",
+    lastName : "Bhalala",
+    marks : [30, 47, 69, 90,[12,34]],
+    date : new Date(),
+    abc: {
+        hello:{
+            hii:{
+                world:"hii this is jenil"
+            }
+        }
+    },
+    display : function (){
+        console.log(this.firstName, this.lastName);
+    }
+}
+
+console.log("before obj", obj); 
+
+const newObj = _.cloneDeep(obj) 
+newObj.abc.hello.hii.world = "jenil!";
+newObj.display();
+newObj.marks[4][1] = 100;
+  
+
+console.log("after obj",obj);  
+console.log("after newObj",newObj);
+
+*/
