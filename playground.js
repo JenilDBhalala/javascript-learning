@@ -9,6 +9,7 @@
 // console.log(user)
 
 
+/*
 console.log('start');
 
 function display(){
@@ -26,3 +27,8 @@ promise1.then(res => {
   console.log(res)
 })
 console.log('end');
+
+*/
+
+
+
