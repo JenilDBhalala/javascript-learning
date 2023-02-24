@@ -48,36 +48,89 @@
 
 
 
+/*
 
-// //In forEach second argument is this keyword.
-// const user = {
-//     firstName: "Jenil",
-//     lastName: "Bhalala",
-//     age: 21,
-//     subs: ['physics', 'chemistry', 'maths'],
-//     displaySubjects(){
-//         this.subs.forEach(function(sub) {
-//             console.log(sub,this.firstName);
-//         }, this)  //this points to user object
-//     }
-// }
+//In forEach second argument is this keyword.
+const user = {
+    firstName: "Jenil",
+    lastName: "Bhalala",
+    age: 21,
+    subs: ['physics', 'chemistry', 'maths'],
+    displaySubjects(){
+        this.subs.forEach(function(sub) {
+            console.log(sub,this.firstName);
+        }, this)  //this points to user object
+    }
+}
 
-// user.displaySubjects();
+user.displaySubjects();
+
+*/
 
 
 
 
-// //arrow function don't have their own this so, it has it's parent this
-// const apple = {
-//     price: 10,
+/*
 
-//     banana: {
-//         price: 40,
-//         getPrice: function () {
-//             const discount = () => console.log(this.price);  //40
-//             discount();
-//         },
-//     },
-// };
+//Another solution of above code 
+//store this keyword in some variable
 
-// apple.banana.getPrice();
+const user = {
+    firstName: "Jenil",
+    lastName: "Bhalala",
+    age: 21,
+    subs: ['physics', 'chemistry', 'maths'],
+    displaySubjects(){
+        const that = this;
+        this.subs.forEach(function(sub) {
+            console.log(sub,that.firstName);
+        }) 
+    }
+}
+
+user.displaySubjects();
+
+*/
+
+
+
+/*
+
+//Another solution of above code : using arrow function in forEach loop
+//it will take parent context
+
+const user = {
+    firstName: "Jenil",
+    lastName: "Bhalala",
+    age: 21,
+    subs: ['physics', 'chemistry', 'maths'],
+    displaySubjects() {
+        this.subs.forEach((sub) => {
+            console.log(sub,this.firstName);
+        }) 
+    }
+}
+
+user.displaySubjects();
+
+*/
+
+
+/*
+
+//arrow function don't have their own this so, it has it's parent this
+const apple = {
+    price: 10,
+
+    banana: {
+        price: 40,
+        getPrice: function () {
+            const discount = () => console.log(this.price);  //40
+            discount();
+        },
+    },
+};
+
+apple.banana.getPrice();
+
+*/
