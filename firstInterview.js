@@ -71,3 +71,15 @@ const notHoisted = () => {
 */
 
 
+/*
+//promise
+
+const promise = new Promise((resolve, reject)=>{
+  resolve(5);
+});
+
+promise.then(value => console.log(value*5)); //25
+
+promise.then(value => console.log(value*7)); //35
+
+*/
