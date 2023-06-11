@@ -23,6 +23,29 @@
 // console.log(output)
 
 
+// // map function : push boolean values into new array
+// var numbers = [2, 4, 5, 6, 3, 9, 10, 13, 16];
+
+// const oddNumbers = numbers.map(x => x % 2 == 0);
+
+// console.log(oddNumbers)
+
+
+//custom mymap function
+
+Array.prototype.mymap = function(callback){
+    const res = [];
+    for(let index=0; index<this.length; index++)
+        res.push(callback(this[index]))
+
+    return res;
+}
+
+var numbers = [2, 4, 5, 6, 3, 9, 10, 13, 16];
+
+const res = numbers.mymap(x => x*2)
+
+console.log(res)
 
 
 // //filter function
@@ -71,6 +94,25 @@
 
 
 
+// // reduce function
+// var pets = ["dog", "chicken", "cat", "dog", "chicken", "chicken", "rabbit"];
+
+// const petsCount = pets.reduce((acc, curr, index, arr) => {
+//   if (acc[curr]) {
+//     acc[curr]++;
+//   } else {
+//     acc[curr] = 1;
+//   }
+
+//   return acc;
+// }, {});
+
+// console.log(petsCount);
+
+
+
+
+
 
 
 // //exmples
@@ -94,7 +136,7 @@
 //     {firstName: "Bhavin", lastName: "Babariya", age: 21},
 // ];
 
-// //age < 30 users name using reduce function
+// //age <= 21 users name using reduce function
 // const output = users.reduce(function(acc, curr){
 //     if(curr.age <= 21){
 //         acc.push(curr.firstName);

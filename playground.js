@@ -8,7 +8,6 @@
 
 // console.log(user)
 
-
 /*
 console.log('start');
 
@@ -29,6 +28,9 @@ promise1.then(res => {
 console.log('end');
 
 */
+
+
+
 
 
 
