@@ -59,7 +59,22 @@ console.log(res)
 
 // console.log(output)
 
+Array.prototype.myfilter = function(callback){
+    const myarr = [];
+    for(let i=0; i<this.length; i++){
+        if(callback(this[i])){
+            myarr.push(this[i]);
+        }
+    }
 
+    return myarr;
+}
+
+var numbers = [2, 4, 5, 6, 3, 9, 10, 13, 16];
+
+const filtered = numbers.myfilter(x => x%2 == 0)
+
+console.log("even numbers", filtered)
 
 
 
